@@ -25,7 +25,44 @@ window.ontouchstart = function(e) { e.preventDefault(); };
 }
 
 img { pointer-events: none; }
+#menu {
+  position: fixed;
+  right: 0;
+  top: 10%;
+  width: 6em;
+  margin-top: -2.5em;
+}
+ul{
+  list-style:none;
+}
 
+/* unvisited link */
+a{
+    text-decoration: none;
+
+}
+a:link {
+  color: brown;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+
+
+}
 </style>
 
 
@@ -42,16 +79,40 @@ var d=1;
 
 var e="/";
 
-var b=".jpg' align='absmiddle'/>";
+var b=".jpg' align='absmiddle'";
 
+var g="id='"
 
+var h="'/>"
 
 for(var i=1;i<34;i++)
  {   
-    document.write(a+d+e+d+c+i+b);
+    document.write(a+d+e+d+c+i+b+g+d+h);
+
+    if (i==33) 
+    {
+            d=d+1;
+           for(var f=1;f<32;f++)
+        {   
+                document.write(a+d+e+d+c+f+b+g+d+h);
+               
+        }
+    }
 
 
 }
+
+d=3;
+for(var j=1;j<31;j++)
+
+{    
+     document.write(a+d+e+d+c+j+b+g+d+h);
+                
+}
+ 
+
+
+
 
 </script>  
 
@@ -108,6 +169,56 @@ return true;
 
 
 </script>
+
+
+
+
+
+
+<div id=menustyle style="text-align:center; margin:0px auto; padding: auto;">
+<ul id=menu>
+<li><a href="#1">第1话</a></li>
+<li><a href="#2">第2话</a></li>
+<li><a href="#3">第3话</a></li>
+<li><a href="#4">第4话</a></li>
+<li><a href="#5">第5话</a></li>
+<li><a href="#6">第6话</a></li>
+<li><a href="#7">第7话</a></li>
+<li><a href="#8">第8话</a></li>
+<li><a href="#9">第9话</a></li>
+<li><a href="#10">第10话</a></li>
+<li><a href="#11">第11话</a></li>
+<li><a href="#12">第12话</a></li>
+<li><a href="#13">第13话</a></li>
+<li><a href="#14">第14话</a></li>
+<li><a href="#15">第15话</a></li>
+<li><a href="#16">第16话</a></li>
+<li><a href="#17">第17话</a></li>
+<li><a href="#18">第18话</a></li>
+<li><a href="#19">第19话</a></li>
+<li><a href="#20">第20话</a></li>
+<li><a href="#21">第21话</a></li>
+<li><a href="#22">第22话</a></li>
+<li><a href="#23">第23话</a></li>
+<li><a href="#24">第24话</a></li>
+<li><a href="#25">第25话</a></li>
+<li><a href="#26">第26话</a></li>
+<li><a href="#27">第27话</a></li>
+<li><a href="#28">第28话</a></li>
+<li><a href="#29">第29话</a></li>
+<li><a href="#30">第30话</a></li>
+<li><a href="#31">第31话</a></li>
+<li><a href="#32">第32话</a></li>
+<li><a href="#33">第33话</a></li>
+<li><a href="#34">第34话</a></li>
+<li><a href="#35">第35话</a></li>
+</ul>
+</div>
+
+
+
+
+
 
 </body>
 </html>
